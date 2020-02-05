@@ -1,6 +1,6 @@
 {
   "name": "StockScrapping",
-  "description": "Web Scrapping Using UI Path",
+  "description": "Web Scrapping Using UI Path!",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.8.0-preview]",
