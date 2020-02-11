@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>568,1125</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>500,759</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,13 +58,13 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Stock Report" sap:VirtualizedContainerService.HintSize="480,750" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Stock Report" sap:VirtualizedContainerService.HintSize="480,659" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Stock Report" Name="AppTitle" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(“dd-MMM-yyyy”, System.Globalization.CultureInfo.InvariantCulture)]" Name="CurrentDate" />
       <Variable x:TypeArguments="x:String" Default="Top Gainer" Name="SheetName" />
       <Variable x:TypeArguments="x:String" Default="C:\Users\vishwas.hk\Desktop\RPA BADGE\RPA DATA" Name="FileSavePath" />
-      <Variable x:TypeArguments="x:String" Default="[FileSavePath +&quot;/&quot; + &quot;StockReport -&quot; + CurrentDate + &quot;.xls&quot;]" Name="FileName" />
+      <Variable x:TypeArguments="x:String" Default="[FileSavePath +&quot;/&quot; + &quot;StockReport -&quot; + CurrentDate + &quot;.xlsx&quot;]" Name="FileName" />
       <Variable x:TypeArguments="x:String" Default="[FileSavePath + &quot;/Resources.xlsx&quot;]" Name="InputTemplateFile" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -73,7 +73,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,607" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,476" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
