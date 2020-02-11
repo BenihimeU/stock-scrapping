@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="OpenBrowser" this:OpenBrowser.ExtractMetaData="&lt;extract&gt;&#xD;&#xA;&lt;row exact='1'&gt;&#xD;&#xA;&lt;webctrl tag='tr' uipath_custom_id='1'/&gt;&#xD;&#xA;&lt;/row&gt;&#xD;&#xA;&lt;column name='Company Name' attr='text' exact='1' &gt;&#xD;&#xA;&lt;webctrl tag='tr' /&gt;&#xD;&#xA;&lt;webctrl tag='td' /&gt;&#xD;&#xA;&lt;webctrl tag='span' /&gt;&#xD;&#xA;&lt;webctrl tag='a' attr='text' idx='1'/&gt;&#xD;&#xA;&lt;/column&gt;&#xD;&#xA;&lt;column name='High' attr='text' exact='1' &gt;&#xD;&#xA;&lt;webctrl tag='tr' /&gt;&#xD;&#xA;&lt;webctrl tag='td' attr='text' idx='2'/&gt;&#xD;&#xA;&lt;/column&gt;&#xD;&#xA;&lt;column name='Low' attr='text' exact='1' &gt;&#xD;&#xA;&lt;webctrl tag='tr' /&gt;&#xD;&#xA;&lt;webctrl tag='td' attr='text' idx='3'/&gt;&#xD;&#xA;&lt;/column&gt;&#xD;&#xA;&lt;column name='Last Price' attr='text' exact='1' &gt;&#xD;&#xA;&lt;webctrl tag='tr' /&gt;&#xD;&#xA;&lt;webctrl tag='td' attr='text' idx='4'/&gt;&#xD;&#xA;&lt;/column&gt;&#xD;&#xA;&lt;column name='Prev Close' attr='text' exact='1' &gt;&#xD;&#xA;&lt;webctrl tag='tr' /&gt;&#xD;&#xA;&lt;webctrl tag='td' attr='text' idx='5'/&gt;&#xD;&#xA;&lt;/column&gt;&#xD;&#xA;&lt;column name='Change' attr='text' exact='1' &gt;&#xD;&#xA;&lt;webctrl tag='tr' /&gt;&#xD;&#xA;&lt;webctrl tag='td' attr='text' idx='6'/&gt;&#xD;&#xA;&lt;/column&gt;&#xD;&#xA;&lt;column name='% Gain' attr='text' exact='1' &gt;&#xD;&#xA;&lt;webctrl tag='tr' /&gt;&#xD;&#xA;&lt;webctrl tag='td' attr='text' idx='7' /&gt;&#xD;&#xA;&lt;/column&gt;&#xD;&#xA;&lt;/extract&gt;" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="OpenBrowser" this:OpenBrowser.ExtractMetaData="&lt;extract&gt;&#xA;&lt;row exact='1'&gt;&#xA;&lt;webctrl tag='tr' uipath_custom_id='1'/&gt;&#xA;&lt;/row&gt;&#xA;&lt;column name='Company Name' attr='text' exact='1' &gt;&#xA;&lt;webctrl tag='tr' /&gt;&#xA;&lt;webctrl tag='td' /&gt;&#xA;&lt;webctrl tag='span' /&gt;&#xA;&lt;webctrl tag='a' attr='text' idx='1'/&gt;&#xA;&lt;/column&gt;&#xA;&lt;column name='High' attr='text' exact='1' &gt;&#xA;&lt;webctrl tag='tr' /&gt;&#xA;&lt;webctrl tag='td' attr='text' idx='2'/&gt;&#xA;&lt;/column&gt;&#xA;&lt;column name='Low' attr='text' exact='1' &gt;&#xA;&lt;webctrl tag='tr' /&gt;&#xA;&lt;webctrl tag='td' attr='text' idx='3'/&gt;&#xA;&lt;/column&gt;&#xA;&lt;column name='Last Price' attr='text' exact='1' &gt;&#xA;&lt;webctrl tag='tr' /&gt;&#xA;&lt;webctrl tag='td' attr='text' idx='4'/&gt;&#xA;&lt;/column&gt;&#xA;&lt;column name='Prev Close' attr='text' exact='1' &gt;&#xA;&lt;webctrl tag='tr' /&gt;&#xA;&lt;webctrl tag='td' attr='text' idx='5'/&gt;&#xA;&lt;/column&gt;&#xA;&lt;column name='Change' attr='text' exact='1' &gt;&#xA;&lt;webctrl tag='tr' /&gt;&#xA;&lt;webctrl tag='td' attr='text' idx='6'/&gt;&#xA;&lt;/column&gt;&#xA;&lt;column name='% Gain' attr='text' exact='1' &gt;&#xA;&lt;webctrl tag='tr' /&gt;&#xA;&lt;webctrl tag='td' attr='text' idx='7' /&gt;&#xA;&lt;/column&gt;&#xA;&lt;/extract&gt;" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="WebData" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="DataURL" Type="InArgument(x:String)" />
@@ -105,7 +105,7 @@
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,298" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="skipValue" />
                         </Sequence.Variables>
@@ -117,7 +117,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" SimulateClick="{x:Null}" ContinueOnError="True" DataTable="[WebData]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="[ExtractMetaData]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="100">
                           <ui:ExtractData.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="229e7d2e038b7b492ac99b6eff085f17" Selector="&lt;webctrl aaname='Company Name High Low Last Price Prev Close Change % Gain 5 Day *' omit:parentid='mc_content' tag='TABLE' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0518a0afc6d1f88989c8e00597ca9505" Selector="&lt;webctrl parentid='mc_content' tag='TABLE' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -127,6 +127,14 @@
                             </ui:Target>
                           </ui:ExtractData.Target>
                         </ui:ExtractData>
+                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="sd:DataTable">[WebData]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="sd:DataTable">[WebData.Select("[Company Name] &lt;&gt;''").CopyToDataTable]</InArgument>
+                          </Assign.Value>
+                        </Assign>
                       </Sequence>
                     </ActivityAction>
                   </ui:OpenBrowser.Body>
