@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>500,719</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>500,1014</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,7 +58,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Stock Report" sap:VirtualizedContainerService.HintSize="480,914" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Stock Report" sap:VirtualizedContainerService.HintSize="480,659" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Stock Report" Name="AppTitle" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(“dd-MMM-yyyy”, System.Globalization.CultureInfo.InvariantCulture)]" Name="CurrentDate" />
@@ -73,7 +73,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,731" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,567" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -81,7 +81,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="StockReprotCreation" sap:VirtualizedContainerService.HintSize="349,504" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="StockReprotCreation" sap:VirtualizedContainerService.HintSize="242,340" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <Sequence.Variables>
             <Variable x:TypeArguments="sd:DataTable" Name="TemplateTable" />
           </Sequence.Variables>
@@ -90,7 +90,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="GetTemplate Process" sap:VirtualizedContainerService.HintSize="307,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="GetTemplate Process" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -133,41 +133,7 @@
                       <ui:InvokeWorkflowFile.Arguments>
                         <OutArgument x:TypeArguments="sd:DataTable" x:Key="WebData">[ProcessedTable]</OutArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="DataURL">[row("URL").ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="ExtractMetaData" xml:space="preserve">&lt;extract&gt;
-&lt;row exact='1'&gt;
-&lt;webctrl tag='tr' uipath_custom_id='1'/&gt;
-&lt;/row&gt;
-&lt;column name='Company Name' attr='text' exact='1' &gt;
-&lt;webctrl tag='tr' /&gt;
-&lt;webctrl tag='td' /&gt;
-&lt;webctrl tag='span' /&gt;
-&lt;webctrl tag='a' attr='text' idx='1'/&gt;
-&lt;/column&gt;
-&lt;column name='High' attr='text' exact='1' &gt;
-&lt;webctrl tag='tr' /&gt;
-&lt;webctrl tag='td' attr='text' idx='2'/&gt;
-&lt;/column&gt;
-&lt;column name='Low' attr='text' exact='1' &gt;
-&lt;webctrl tag='tr' /&gt;
-&lt;webctrl tag='td' attr='text' idx='3'/&gt;
-&lt;/column&gt;
-&lt;column name='Last Price' attr='text' exact='1' &gt;
-&lt;webctrl tag='tr' /&gt;
-&lt;webctrl tag='td' attr='text' idx='4'/&gt;
-&lt;/column&gt;
-&lt;column name='Prev Close' attr='text' exact='1' &gt;
-&lt;webctrl tag='tr' /&gt;
-&lt;webctrl tag='td' attr='text' idx='5'/&gt;
-&lt;/column&gt;
-&lt;column name='Change' attr='text' exact='1' &gt;
-&lt;webctrl tag='tr' /&gt;
-&lt;webctrl tag='td' attr='text' idx='6'/&gt;
-&lt;/column&gt;
-&lt;column name='% Gain' attr='text' exact='1' &gt;
-&lt;webctrl tag='tr' /&gt;
-&lt;webctrl tag='td' attr='text' idx='7' /&gt;
-&lt;/column&gt;
-&lt;/extract&gt;</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="ExtractMetaData">[row("Schema").ToString]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -195,11 +161,22 @@
             </ui:ForEachRow.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ForEachRow>
+          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Send Mail Flow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="AttachAndSendMail\SendMail.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="AttachmentPath">[FileName]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
@@ -214,7 +191,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Common\LogBox.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Common\LogBox.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="LogType">Fatal</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="Message">[AppTitle + " ----&gt;" + exception.ToString]</InArgument>
@@ -230,16 +207,5 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Send Mail Flow" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="AttachAndSendMail\SendMail.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="AttachmentPath">[FileName]</InArgument>
-      </ui:InvokeWorkflowFile.Arguments>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:InvokeWorkflowFile>
   </Sequence>
 </Activity>
